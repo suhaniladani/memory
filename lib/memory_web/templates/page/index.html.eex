@@ -1,7 +1,21 @@
-<h1>Memory Game</h1>
+<div class="row">
+<div class="col">
+	<h1 id ="join-game">Join a Game</h1>
+    	Enter Your Name:<br>
+    	<p><input type="text" id="game-input"></p>
+	    <a id = "link"><button class="btn" id="game-button" onclick="namefun()"> Start </button></a>
 
-<div id="game">
-  Loading...
+	    <script>
+	    	function namefun(){
+	    		var gameName = document.getElementById("game-input").value;
+	    		var gameLink = "/games/" + gameName;
+	    		console.log(gameLink);
+	    		document.getElementById("link").setAttribute("href", gameLink);
+	    	}
+	    </script>
+</div>
+	
+
 </div>
 
 

@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <script>
+      window.userToken = "INSECURE";
+    </script>
 
     <title>Hello Memory!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
@@ -26,7 +31,7 @@
       </div>
       <% end %>
 
-      <main role="main">
+      <main>
         <%= render @view_module, @view_template, assigns %>
       </main>
 

@@ -3,4 +3,66 @@
 @import "bootstrap";
 
 .side { padding: 4ex; text-align: center; }
-h1 { text-align: center; }
+h1 { text-align: center; 
+margin-left: -1rem;
+margin-bottom: 3rem;
+color: cadetblue;
+
+}
+
+.card1{
+	height: 100px;
+width: 100px;
+margin: 0;
+text-align: center;
+font-size: 3em;
+border: 2px solid gray;
+border-radius: 10px;
+padding: 10px;
+background-color: #000033;
+color: white;
+
+	&--flipped{
+		background-color:gray;
+	};
+
+	&--matchfound{
+	background-color:green;
+	}
+
+}
+.cardCol{
+	padding:10px;
+	margin-right:-5rem;
+}
+.card1 span{
+	margin-top: 0.25em;
+}
+
+.reset-btn{
+border-radius: 4px;
+background-color: cadetblue;
+color: white;
+float: right;
+margin-left: 51rem;
+margin-top: 2rem;
+padding: 11px 25px;
+position: absolute;
+display: inline-flex;
+font-size: 25px;
+border: 2px solid gray;
+}
+
+.number-clicks{
+font-size: 30px;
+padding: 4rem 0rem;
+float: left;
+margin-top: -1rem;
+display:inline-flex;
+margin-left:5rem;
+color: cadetblue;
+}
+
+.container{
+	max-width:70%;
+}
